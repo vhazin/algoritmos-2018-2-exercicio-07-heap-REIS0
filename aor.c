@@ -43,5 +43,15 @@ void saida(struct data array[]) {
 	int size = sizeof(array);
 	int i;
 
+	for (i = 0; i < size; i++) {
+		printf("(");
+		for (j = 0; j < count; j++) {
+			if (array[j].prioridade == i) {
+				printf("%c/%d)", array[j].rotulo, array[j].prioridade);
+			}else {
+				continue;
+			}
+		}
+	}
 
 }
